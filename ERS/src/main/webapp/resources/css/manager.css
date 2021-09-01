@@ -1,0 +1,206 @@
+@charset "ISO-8859-1";
+
+
+/* START OF THE MOVING BACKGROUND */
+html {
+	height: 100%;
+	/* max-height: 600px; */
+	width: 1000px;
+	background-color: hsla(200,40%,30%,.4);
+	background-image:		
+		url('https://78.media.tumblr.com/cae86e76225a25b17332dfc9cf8b1121/tumblr_p7n8kqHMuD1uy4lhuo1_540.png'), 
+		url('https://78.media.tumblr.com/66445d34fe560351d474af69ef3f2fb0/tumblr_p7n908E1Jb1uy4lhuo1_1280.png'),
+		url('https://78.media.tumblr.com/8cd0a12b7d9d5ba2c7d26f42c25de99f/tumblr_p7n8kqHMuD1uy4lhuo2_1280.png'),
+		url('https://78.media.tumblr.com/5ecb41b654f4e8878f59445b948ede50/tumblr_p7n8on19cV1uy4lhuo1_1280.png'),
+		url('https://78.media.tumblr.com/28bd9a2522fbf8981d680317ccbf4282/tumblr_p7n8kqHMuD1uy4lhuo3_1280.png');
+	background-repeat: repeat-x;
+	background-position: 
+		0 20%,
+		0 100%,
+		0 50%,
+		0 100%,
+		0 0;
+	background-size: 
+		2500px,
+		800px,
+		500px 200px,
+		1000px,
+		400px 260px;
+	animation: 50s para infinite linear;
+	}
+
+@keyframes para {
+	100% {
+		background-position: 
+			-5000px 20%,
+			-800px 95%,
+			500px 50%,
+			1000px 100%,
+			400px 0;
+		}
+	}
+
+
+/* END OF THE MOVING BACKGROUND */
+
+/* START OF INTERRACTIVE NAVBAR */
+
+*{
+  margin:0;
+  padding:0;
+  font-family:verdana;
+}
+#navbar{
+  width:100%;
+  height:100vh;
+  background-image: url(img2.jpg);
+  background-size: cover;
+}
+nav{
+  width: 100%;
+  height: 50px;
+  background-color: #0005;
+  line-height: 50px;
+}
+nav ul{
+  float: right;
+  margin-right: 30px;
+}
+nav ul li{
+  list-style-type: none;
+  display: inline-block;
+  transition: 0.7s all;
+}
+nav ul li:hover{
+ background-color:#088;
+}
+nav ul li a{
+  text-decoration: none;
+  color: #fff;
+  padding: 30px;
+}
+
+/* END OF INTERRACTIVE NAVBAR */
+
+
+body {
+	margin: 0;
+	font-family: 'Roboto', sans-serif;
+/* 	background: #e4decd;
+ */	color: #000000;
+}
+
+.container {
+	margin: 60px;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+.reimbursements {
+/* 	height: 100%;
+	width: 67%;
+	display: flex;
+	flex-direction: column;
+	align-self: center;
+	justify-content: center;
+	align-items: center;
+	justify-content: center; */
+}
+
+.welcome{
+	text-align:center;
+	
+}
+
+.reimbursement-table {
+	border-collapse: collapse;
+}
+
+td, th {
+	border: 1px solid #1F1F1F;
+	text-align: left;
+	padding: 10px;
+}
+/* 
+tr:nth-child(even) {
+	background-color: #ffe3bb;
+}
+
+tr:nth-child(even) {
+//background-color: #82716e;
+	color: #D6D6D6;
+}
+
+tr:nth-child(odd) {
+	background-color: #c2b490;
+	color: #000000;
+}
+ 
+#filter {
+	margin-bottom: 1rem;
+	padding: 15px 32px;
+	border: none;
+	background-color: #82716e;
+	color: #D6D6D6;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	font-family: 'Roboto', sans-serif;
+	padding: 15px 32px;
+}
+
+#status {
+	margin-bottom: 1rem;
+	padding: 15px 32px;
+	border: none;
+	background-color: #82716e;
+	color: #D6D6D6;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	font-family: 'Roboto', sans-serif;
+}
+
+select:active, select:hover {
+	outline-color: #005504;
+}
+
+#appr {
+	background: #66ff00;
+	border: none;
+	color: #0A0A0A;
+	width: 100px;
+	height: 30px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	transform: scale(1);
+}
+
+#appr:hover {
+	transform: scale(1.1) perspective(1px);
+	box-shadow: 0px 1px 0px 0px;
+	cursor: pointer;
+}
+
+#deny {
+	background: #FF0000;
+	border: none;
+	color: #0A0A0A;
+	width: 100px;
+	height: 30px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+}
+
+#deny:hover {
+	transform: scale(1.1) perspective(1px);
+	box-shadow: 0px 1px 0px 0px;
+	cursor: pointer;
+}
